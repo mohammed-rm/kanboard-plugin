@@ -9,4 +9,5 @@ class Tache(models.Model):
 class Utilisateur(models.Model):
     nom = models.CharField(max_length=20)
     prenom = models.CharField(max_length=50)
+    mot_de_passe = models.CharField(max_length=50)
     tache = models.ManyToManyField(Tache)
